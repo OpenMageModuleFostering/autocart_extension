@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Autocart_Extension",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "This extension add products to cart automatically based on other products already in cart by set of rules.",
+    "authors": [
+    {
+        "name": "Unicode Systems",
+        "email": "magento@unicodesystems.in"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

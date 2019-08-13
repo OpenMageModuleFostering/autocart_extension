@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Autocart_Extension</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension add products to cart automatically based on other products already in cart by set of rules.</summary>
+    <description>This extension add products to cart automatically based on other products already in cart by set of rules. This is good for advertising etc.</description>
+    <notes>First Release</notes>
+    <authors><author><name>Unicode Systems</name><user>Unicode_Systems</user><email>magento@unicodesystems.in</email></author></authors>
+    <date>2014-11-14</date>
+    <time>05:03:20</time>
+    <contents><target name="magecommunity"><dir name="Uni"><dir name="Autocart"><dir name="Block"><dir name="Adminhtml"><dir name="Autocart"><dir name="Edit"><file name="Form.php" hash="62ef5a53e74b1b20f9d4ef461a3322fa"/><dir name="Tab"><file name="Form.php" hash="9ca9305b45d8189d9446498078fded03"/><file name="Form2.php" hash="d2dbaeacfbb94c4592e1a0dd0fb7d371"/><file name="Form3.php" hash="ca21646b9b3514c8b32e54d1526712d2"/><file name="Product.php" hash="3c3525135488a0d5a73256a77647ef65"/></dir><file name="Tabs.php" hash="b0d2314a88fb907638cf8f788686f193"/></dir><file name="Edit.php" hash="ef472bde54fadff7c05e087a989cb63f"/><file name="Grid.php" hash="2a77545a66086022489bff021b93d83d"/></dir><file name="Autocart.php" hash="a7255b9dd4b3ddfe59414e712e346285"/></dir><file name="Autocart.php" hash="263c83ceb6c7c48600bd049fc8c33592"/></dir><dir name="Helper"><file name="Data.php" hash="00f2d90f52b13b3e28b35ab41a265d44"/></dir><dir name="Model"><file name="Autocart.php" hash="e62d7e6a4d110a9e465a2cca7888cd8e"/><dir name="Mysql4"><dir name="Autocart"><file name="Collection.php" hash="ef8fa8288a7e787ed5d936d84a181e85"/></dir><file name="Autocart.php" hash="e8f7173d6f886f59a4b92781fe0b0c80"/></dir><file name="Observer.php" hash="6505eec8a3daecf37354b4138f3fd018"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="AutocartController.php" hash="d9b4cf4b90df31f81231f0690b39702c"/></dir><file name="IndexController.php" hash="c51125f04554046d3bad2d1db8cc140a"/></dir><dir name="etc"><file name="adminhtml.xml" hash="3632dd8a383240eb785dbe435442a4d3"/><file name="config.xml" hash="9896ce482483034205e2116fb0c55e36"/></dir><dir name="sql"><dir name="autocart_setup"><file name="mysql4-install-1.0.0.php" hash="5706c1dc029cc83516e7f171a641fc1b"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Uni_Autocart.xml" hash="cb5d93e4c8c2efe78e20b6a09f93616c"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="autocart.xml" hash="339ca60b5f7c1cbbddab27607e84ab6e"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.6.0.0</min><max>1.8.1.0</max></package><extension><name>gd</name><min>2.0.28</min><max>3.0</max></extension></required></dependencies>
+</package>

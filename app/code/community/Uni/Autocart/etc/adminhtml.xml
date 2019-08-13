@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Autocart
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL)
+ */
+ -->
+<config>
+    <menu>
+        <promo>
+            <children>
+                <autocart module="autocart">
+                    <title>Auto Add To Cart Rules</title>
+                    <sort_order>151</sort_order>
+                    <action>adminhtml/autocart</action>
+                </autocart>
+            </children>
+        </promo>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <addfree>
+                                        <title>AddFree</title>
+                                    </addfree>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

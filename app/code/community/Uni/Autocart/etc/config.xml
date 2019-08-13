@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Unicode Systems
+ * @category   Uni
+ * @package    Uni_Autocart
+ * @copyright  Copyright (c) 2010-2011 Unicode Systems. (http://www.unicodesystems.in)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL)
+ */
+ -->
+
+<config>
+    <modules>
+        <Uni_Autocart>
+            <version>1.0.0</version>
+        </Uni_Autocart>
+    </modules>
+    <adminhtml>
+        <layout>
+            <updates>
+                <autocart>
+                    <file>autocart.xml</file>
+                </autocart>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <autocart before="Mage_Adminhtml">Uni_Autocart_Adminhtml</autocart>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <global>
+        <blocks>
+            <autocart>
+                <class>Uni_Autocart_Block</class>
+            </autocart>
+        </blocks>
+        <models>
+            <autocart>
+                <class>Uni_Autocart_Model</class>
+                <resourceModel>autocart_mysql4</resourceModel>
+            </autocart>
+            <autocart_mysql4>
+                <class>Uni_Autocart_Model_Mysql4</class>
+                <entities>
+                    <autocart>
+                        <table>uni_autocart</table>
+                    </autocart>
+                </entities>
+            </autocart_mysql4>
+        </models>
+        <helpers>
+            <autocart>
+                <class>Uni_Autocart_Helper</class>
+            </autocart>
+        </helpers>
+        <resources>
+            <autocart_setup>
+                <setup>
+                    <module>Uni_Autocart</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </autocart_setup>
+            <autocart_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </autocart_write>
+            <autocart_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </autocart_read>
+        </resources>
+        <events>
+            <sales_quote_add_item>
+                <observers>
+                    <uni_autocart>
+                        <type>singleton</type>
+                        <class>Uni_Autocart_Model_Observer</class>
+                        <method>checkAutocart</method>
+                    </uni_autocart>
+                </observers>
+            </sales_quote_add_item>
+        </events>
+    </global>
+</config>
