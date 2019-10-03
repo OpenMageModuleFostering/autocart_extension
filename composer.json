@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Autocart_Extension",
+    "name": "openmage-module-fostering\/autocart_extension",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension add products to cart automatically based on other products already in cart by set of rules.",
     "authors": [
